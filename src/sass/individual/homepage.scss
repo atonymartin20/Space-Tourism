@@ -1,0 +1,51 @@
+.homepage-container-div {
+    background: #A2A2A2;
+    background-image: url("../assets/home/background-home-desktop.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.homepage-inside-container-div {
+    height: 764px;
+    @include flex(space-between, flex-end);
+    padding: 251px 11.458333% 131px 11.458333%;
+}
+
+.homepage-inside-container-text-div {
+    @include flex(space-between, flex-start);
+    flex-direction: column;
+    height: 382px;
+    width: 450px;
+}
+
+.homepage-inside-container-text-div h5 {
+    text-transform: uppercase;
+}
+
+.homepage-inside-container-text-div h1 {
+    text-transform: uppercase;
+}
+
+.homepage-inside-container-text-div p {
+    color: $light-grey-blue;
+    font-size: 1.73rem;
+}
+
+.homepage-inside-container-explore-button {
+    background: #FFFFFF;
+    width: 274px;
+    height: 274px;
+    border-radius: 50%;
+    @include flex();
+    cursor: pointer;
+
+    &:hover {
+        outline: 88px solid rgba(255, 255, 255, 0.1);
+    }
+}
+
+.homepage-inside-container-explore-button h4 {
+    color: $very-dark-blue;
+    letter-spacing: 2px;
+}
