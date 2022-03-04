@@ -1,0 +1,139 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+h1 {
+    font-family: $bellefair;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15.0rem;
+    line-height: 172px;
+    color: $white;
+}
+
+h2 {
+    font-family: $bellefair;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10.0rem;
+    line-height: 115px;
+    color: $white;
+}
+
+h3 {
+    font-family: $bellefair;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5.6rem;
+    line-height: 64px;
+    text-transform: uppercase;
+    color: $white;
+}
+
+h4 {
+    font-family: $bellefair;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3.2rem;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: $white;
+}
+
+h5 {
+    font-family: $barlowCondensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.8rem;
+    line-height: 34px;   
+    letter-spacing: 4.725px;
+    color: $light-grey-blue;
+}
+
+p {
+    font-family: $barlow;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 32px;
+    color: $white;
+}
+
+.sub1 {
+    font-family: $bellefair;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.8rem;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: $white;
+}
+
+.sub2 {
+    font-family: $barlowCondensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 17px;   
+    letter-spacing: 2.3625px;
+    text-transform: uppercase;
+    color: $white;
+}
+
+.active-nav-text {
+    font-family: $barlowCondensed;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    color: $white;
+    text-transform: uppercase;
+    text-decoration: none;
+    height: 100%;
+    @include flex(space-between, center);
+    border-bottom: 3px solid $white;
+    padding-top: 3px;
+
+   &:hover {
+        border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+    }
+}
+
+.nav-text {
+    font-family: $barlowCondensed;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    color: $white;
+    text-transform: uppercase;
+    text-decoration: none;
+    height: 100%;
+    @include flex(space-between, center);
+
+    &:hover {
+        padding-top: 3px;
+        border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+    }
+}
+
+.page-container-div {
+    @include flex(center, flex-start);
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1440px;
+    height: 100vh;
+    max-height: 900px;
+    margin: 0 auto;
+}
+
+.page-inside-container-div {
+    @include flex(center, flex-start);
+    width: 100%;
+}
