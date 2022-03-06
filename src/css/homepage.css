@@ -110,9 +110,9 @@ h5 {
 }
 
 p {
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Barlow", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 1.8rem;
   line-height: 32px;
   color: #FFFFFF;
@@ -194,8 +194,8 @@ p {
 
 .page-inside-container-div {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: flex-end;
   width: 100%;
 }
 
@@ -274,9 +274,50 @@ p {
 .homepage-inside-container-div {
   height: 764px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-end;
   padding: 251px 11.458333% 131px 11.458333%;
+}
+
+.homepage-inside-container-text-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 382px;
+  width: 450px;
+}
+
+.homepage-inside-container-text-div h5 {
+  text-transform: uppercase;
+}
+
+.homepage-inside-container-text-div h1 {
+  text-transform: uppercase;
+}
+
+.homepage-inside-container-text-div p {
+  color: #D0D6F9;
+  font-size: 1.73rem;
+}
+
+.homepage-inside-container-explore-button {
+  background: #FFFFFF;
+  width: 274px;
+  height: 274px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.homepage-inside-container-explore-button:hover {
+  outline: 88px solid rgba(255, 255, 255, 0.1);
+}
+
+.homepage-inside-container-explore-button h4 {
+  color: #0B0D17;
+  letter-spacing: 2px;
 }
 
 /*# sourceMappingURL=homepage.css.map */
