@@ -1,0 +1,409 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-family: "Bellefair", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15rem;
+  line-height: 172px;
+  color: #FFFFFF;
+}
+
+h2 {
+  font-family: "Bellefair", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10rem;
+  line-height: 115px;
+  color: #FFFFFF;
+}
+
+h3 {
+  font-family: "Bellefair", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 5.6rem;
+  line-height: 64px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+h4 {
+  font-family: "Bellefair", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3.2rem;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+h5 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.8rem;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+  color: #D0D6F9;
+}
+
+p {
+  font-family: "Barlow", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+
+.sub1 {
+  font-family: "Bellefair", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.8rem;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.sub2 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 17px;
+  letter-spacing: 2.3625px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.active-nav-text {
+  font-family: "Barlow Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #FFFFFF;
+  padding-top: 3px;
+}
+.active-nav-text:hover {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.nav-text {
+  font-family: "Barlow Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-text:hover {
+  padding-top: 3px;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.page-container-div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1440px;
+  height: 100vh;
+  max-height: 900px;
+  margin: 0 auto;
+}
+
+.page-inside-container-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.navbar {
+  width: 100%;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.header-logo {
+  margin-left: 55px;
+  height: 48px;
+  width: 48px;
+}
+
+.navbar-rect {
+  width: 473px;
+  height: 1px;
+  margin-left: 64px;
+  background: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  margin-right: -30px;
+  position: relative;
+  z-index: 5;
+}
+
+.nav-outside-div {
+  width: 830px;
+  height: 96px;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(81.5485px);
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-nav {
+  width: 542px;
+  height: 19px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 40px;
+  height: 100%;
+}
+
+.nav-text-bold {
+  font-family: "Barlow Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.destination-container-div {
+  background: #A2A2A2;
+  background-image: url("../assets/destination/background-destination-desktop.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.destination-inside-container-div {
+  height: 764px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 76px 11.319444% 112px 11.5625%;
+}
+.destination-inside-container-div h5 {
+  text-transform: uppercase;
+  margin-bottom: 64px;
+}
+.destination-inside-container-div h5 span {
+  margin-right: 11px;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  font-weight: bold;
+}
+
+.destination-content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 478px;
+  width: 100%;
+}
+
+.destination-content-left-container {
+  height: 445px;
+  width: 445px;
+  margin-left: 64px;
+}
+
+.destination-content-right-container {
+  width: 445px;
+  height: 472px;
+  margin-bottom: 6px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.destination-content-right-container-destination-selector {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 285.5px;
+  height: 34px;
+  margin-bottom: 37px;
+}
+
+.destination-active-nav-text {
+  font-family: "Barlow Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 3px solid #FFFFFF;
+  cursor: pointer;
+}
+.destination-active-nav-text:hover {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.destination-nav-text {
+  font-family: "Barlow Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  cursor: pointer;
+}
+.destination-nav-text:hover {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.destination-content-right-container-info h2 {
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.destination-content-right-container-info p {
+  color: #D0D6F9;
+  margin-bottom: 54px;
+}
+
+.destination-content-right-container-divider-line {
+  height: 1px;
+  width: 100%;
+  background: #383B4B;
+  margin-bottom: 28px;
+}
+
+.destination-content-right-container-info-bottom-portion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 61px;
+}
+
+.destination-content-right-container-info-bottom-portion-left-side {
+  width: 50%;
+  height: 61px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.destination-content-right-container-info-bottom-portion-right-side {
+  width: 50%;
+  height: 61px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=destination.css.map */
