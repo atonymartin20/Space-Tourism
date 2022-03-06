@@ -71,7 +71,7 @@ class Destination extends React.Component {
                 <div className='page-container-div destination-container-div'>
                     <Navbar />
                     <div className='page-inside-container-div destination-inside-container-div'>
-                        01 Pick your destination
+                        <h5><span>01</span> Pick your destination</h5>
 
                         <div className='destination-content-container'>
                             <div className='destination-content-left-container'>
@@ -90,7 +90,43 @@ class Destination extends React.Component {
                                 </div>
 
                                 <div className='destination-content-right-container-info'>
+                                    <h2>
+                                        {this.state.option1active === true ? `${this.state.destinations[0].name}` : null}
+                                        {this.state.option2active === true ? `${this.state.destinations[1].name}` : null}
+                                        {this.state.option3active === true ? `${this.state.destinations[2].name}` : null}
+                                        {this.state.option4active === true ? `${this.state.destinations[3].name}` : null}
+                                    </h2>
 
+                                    <p>
+                                        {this.state.option1active === true ? `${this.state.destinations[0].description}` : null}
+                                        {this.state.option2active === true ? `${this.state.destinations[1].description}` : null}
+                                        {this.state.option3active === true ? `${this.state.destinations[2].description}` : null}
+                                        {this.state.option4active === true ? `${this.state.destinations[3].description}` : null}
+                                    </p>
+                                    
+                                    <div className='destination-content-right-container-divider-line' />
+
+                                    <div className='destination-content-right-container-info-bottom-portion'>
+                                        <div className='destination-content-right-container-info-bottom-portion-left-side'>
+                                            <span className='sub2'>Avg. Distance</span>
+                                            <span className='sub1'>
+                                                {this.state.option1active === true ? `${this.state.destinations[0].distance}` : null}
+                                                {this.state.option2active === true ? `${this.state.destinations[1].distance}` : null}
+                                                {this.state.option3active === true ? `${this.state.destinations[2].distance}` : null}
+                                                {this.state.option4active === true ? `${this.state.destinations[3].distance}` : null}
+                                            </span>
+                                        </div>    
+
+                                        <div className='destination-content-right-container-info-bottom-portion-right-side'>
+                                            <span className='sub2'>Est. Travel Time</span>
+                                            <span className='sub1'>
+                                                {this.state.option1active === true ? `${this.state.destinations[0].travel}` : null}
+                                                {this.state.option2active === true ? `${this.state.destinations[1].travel}` : null}
+                                                {this.state.option3active === true ? `${this.state.destinations[2].travel}` : null}
+                                                {this.state.option4active === true ? `${this.state.destinations[3].travel}` : null}
+                                            </span>
+                                        </div>    
+                                    </div>
                                 </div>
                             </div>  
                         </div>
