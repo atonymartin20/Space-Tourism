@@ -1,0 +1,13 @@
+.destination-container-div {
+    background: #A2A2A2;
+    background-image: url("../assets/destination/background-destination-desktop.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.destination-inside-container-div {
+    height: 764px;
+    @include flex(space-between, flex-end);
+    padding: 76px 11.319444% 112px 11.5625%;
+}
